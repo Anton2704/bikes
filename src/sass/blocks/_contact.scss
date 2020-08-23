@@ -1,0 +1,71 @@
+.contact {
+  padding: 11rem 0;
+  position: relative;
+
+  @media only screen and (max-width:$tab-port) {
+    padding: 5rem 0;
+    }
+  
+  &__img {
+    img {
+      display: block;
+      max-width: 10rem;
+      min-height: 10rem;
+      margin: 0 auto;
+    }
+    figcaption {
+      color: $color-text;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 4rem;
+    }
+  }
+    &__form {
+      text-align: center;
+    }
+  &__email {
+    font-family: "Lato";
+    padding: 2.8rem;
+    width: 30vw;
+    outline: none;
+    border: 1px solid #d3d7d9;
+    margin-top: 3.5rem;
+    
+    
+    @media only screen and (max-width:$tab-port) {
+      max-width: 70vw;
+    }
+
+
+    &:focus,
+    &:active {
+      border: 1px solid $color-green;
+    }
+
+    &::placeholder {
+      font-style: italic;
+    }
+  }
+
+  &__send {
+    color: #ffffff;
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 2.1rem 4rem;
+    background-color: $color-green;
+    transform: translateY(3px);
+    border: 2px solid $color-green;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color-green, $amount: 10%);
+    }
+
+    @media only screen and (max-width:$tab-port) {
+      max-width: 70vw;
+    }
+  }
+
+  
+}

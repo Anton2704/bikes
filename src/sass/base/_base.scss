@@ -1,0 +1,25 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Lato";
+
+  @media only screen and (max-width:$tab-port) {
+    font-size: 50%;
+  }
+}
+
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh repeat(7, min-content);
+
+}
